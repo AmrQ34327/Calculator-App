@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
             seedColor: const Color.fromARGB(255, 2, 26, 240)),
@@ -72,6 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
         appBar: AppBar(
             centerTitle: true,
             backgroundColor: const Color.fromARGB(218, 27, 2, 250),
@@ -95,18 +97,13 @@ class _MyHomePageState extends State<MyHomePage> {
                   textAlign: TextAlign.center,
                   style: const TextStyle(fontSize: 24),
                   decoration:  InputDecoration(
-                    suffixIcon: TextButton(
-                      style: TextButton.styleFrom(
-                        backgroundColor: const Color.fromARGB(255, 255, 255, 255),
-                        minimumSize: const Size(20, 10),
-                        splashFactory: NoSplash.splashFactory
-                        ) ,
-                      onPressed: textController.clear,
+                    suffixIcon: InkWell(
+                      onTap: textController.clear,
                        child: const Text("Clear",
                         style: TextStyle(
                           color: Colors.red,
                           fontWeight: FontWeight.bold,
-                          fontSize: 10 ,)
+                          fontSize: 12 ,)
                        )
                   ),
                 )
