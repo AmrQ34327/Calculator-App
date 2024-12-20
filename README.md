@@ -5,5 +5,9 @@ A simple calculator made using Flutter.
 
 ## Screenshot 
 
-<img src="https://github.com/user-attachments/assets/c51c6ba1-6c60-45c0-b12b-4c77e7ebcd26" alt="Screenshot" style="height: 500px; width: 300px;">
+<img src="https://github.com/user-attachments/assets/d80214a6-6797-48bc-a811-76c131333d01" alt="Screenshot" width="300" height="500">
+
+
+
+
 
